@@ -3,10 +3,10 @@ import img from '../imgs/square-example.png'
 import { Box, styled } from '@mui/material';
 // import { maxWidth } from '@mui/system';
 
-const BoxPlus = styled(Box)(({ theme }) => ({
-    // padding: '10px',
-    margin: '10px',
-}))
+// const BoxPlus = styled(Box)(({ theme }) => ({
+//     // padding: '10px',
+//     margin: '10px',
+// }))
 
 function AboutMe() {
     return (
