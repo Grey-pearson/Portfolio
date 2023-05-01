@@ -1,0 +1,1 @@
+// redirects to specific part of the page

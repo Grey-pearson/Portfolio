@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider, colors, GlobalStyles } from '@mui/material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const theme = createTheme({
+  // add styling for box proly
   palette: {
     primary: {
-      main: '#483D8B',
+      main: colors.teal[500],
+      light: colors.teal[300],
+      dark: colors.teal[700],
     },
     secondary: {
-      main: '#DBEBEB',
+      main: colors.lightBlue[500],
+      light: colors.lightBlue[300],
+      dark: colors.lightBlue[700],
     },
   },
 });
@@ -22,6 +26,18 @@ const theme = createTheme({
 root.render(
   <React.StrictMode>
     <CssBaseline />
+    <GlobalStyles
+      styles={{
+        body: {
+          display: 'grid',
+          alignContent: 'center',
+          justifyContent: 'center',
+          height: '100vh',
+          overflow: 'hidden',
+          backgroundColor: '#00695f',
+        },
+      }}
+    />
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
