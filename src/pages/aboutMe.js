@@ -13,16 +13,12 @@ function AboutMe() {
         <Box sx={{
             display: 'grid',
             gridAutoFlow: 'column',
-            // alignContent: 'center',
-            // justifyContent: 'center',
-            // height: 'auto',
         }}>
             <img sx={{
-                // maxWidth: '100%',
-                // height: 'auto',
                 bgcolor: 'primary.light',
                 padding: '10px',
                 margin: '10px',
+                borderRadius: '5px'
             }}
                 alt='img of grey pearson'
                 src={img}
@@ -32,6 +28,7 @@ function AboutMe() {
                 maxWidth: '400px',
                 padding: '10px',
                 margin: '10px',
+                borderRadius: '5px'
             }}>
                 paragraph about me ig? or i blah blah blah lorem ipsem i blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             </Box>
