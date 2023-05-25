@@ -3,39 +3,39 @@
 import React from 'react';
 import { Box, Link } from '@mui/material';
 
-// find out how to theme link components to condense mui
+const styles = {
+    link: {
+        padding: '0.7rem',
+        color: 'black',
+        // hover idk
+    },
+    box: {
+        background: '#03a9f4',
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        overflow: 'hidden',
+        width: '100%',
+        // height: '5vh',
+        display: 'flex',
+        // alignContent: 'center',
+        justifyContent: 'center',
+        boxShadow: ' 0px 0.4rem 0.3rem rgba(0, 0, 0, .5)'
+    },
+};
+
 
 function NavBar() {
 
-
     return (
-        <Box sx={{
-            bgcolor: 'secondary.main',
-            position: 'fixed',
-            top: '0',
-            left: '0',
-            overflow: 'hidden',
-            width: '100%',
-            height: '5vh',
+        <Box style={styles.box}>
+            <Link href='blank' underline="none" style={styles.link}>about me</Link>
 
-        }}>
-            <Link href='blank' underline="none" sx={{
-                padding: '10px',
-                margin: '10px',
-            }}>about me</Link>
+            <Link href='blank' underline="none" style={styles.link}>projects</Link>
 
-            <Link href='blank' underline="none" sx={{
-                padding: '10px',
-                margin: '10px',
-            }}>projects</Link>
-
-            <Link href='blank' underline="none" sx={{
-                padding: '10px',
-                margin: '10px',
-            }}>contact</Link>
+            <Link href='blank' underline="none" style={styles.link}>contact</Link>
         </Box>
     )
-
 
 }
 

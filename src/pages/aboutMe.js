@@ -16,16 +16,20 @@ function AboutMe() {
         }}>
             <img alt='img of grey pearson' src={img}
                 style={{
-                    padding: '10px',
-                    borderRadius: '15px',
+                    margin: '10px',
+                    objectFit: 'cover',
+                    objectPosition: 'right top',
+                    borderRadius: '5px',
+                    boxShadow: ' -7px 5px 5px rgba(0, 0, 0, .5)',
                 }}
             />
             <Box sx={{
                 bgcolor: 'secondary.main',
-                maxWidth: '400px',
+                maxWidth: '316px',
                 padding: '20px',
                 margin: '10px',
-                borderRadius: '5px'
+                borderRadius: '5px',
+                boxShadow: ' 7px 5px 5px rgba(0, 0, 0, .5)',
             }}>
                 paragraph about me ig? or i blah blah blah lorem ipsem i blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah asdfas dfasdf
             </Box>

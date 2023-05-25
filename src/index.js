@@ -7,7 +7,8 @@ import { createTheme, ThemeProvider, colors, GlobalStyles } from '@mui/material'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const theme = createTheme({
-  // add styling for box proly
+  // add styling for box proly???
+  // styles needed: Link, 
   palette: {
     primary: {
       main: colors.teal[500],
