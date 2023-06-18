@@ -11,8 +11,8 @@ import { Box } from '@mui/material';
 function AboutMe() {
     return (
         <Box sx={{
-            display: 'grid',
-            gridAutoFlow: 'column',
+            display: 'flex',
+
         }}>
             <img alt='img of grey pearson' src={img}
                 style={{
