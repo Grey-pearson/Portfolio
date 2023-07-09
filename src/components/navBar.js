@@ -5,7 +5,7 @@ import { Box, Link } from '@mui/material';
 
 const styles = {
     link: {
-        padding: '0.7rem',
+        padding: '0.7rem 5rem',
         color: 'black',
         // hover idk
     },
@@ -20,7 +20,7 @@ const styles = {
         display: 'flex',
         // alignContent: 'center',
         justifyContent: 'center',
-        boxShadow: ' 0px 0.4rem 0.3rem rgba(0, 0, 0, .5)'
+        boxShadow: ' 0px 0.4rem 0.3rem rgba(0, 0, 0, .4)'
     },
 };
 
