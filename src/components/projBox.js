@@ -11,7 +11,8 @@ function ProjBox() {
         <Link>
             <Box sx={{
                 color: 'black',
-                backgroundColor: 'white',
+                // backgroundColor: 'white',
+
             }}>test</Box>
         </Link>
     )

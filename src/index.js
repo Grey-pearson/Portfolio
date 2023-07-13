@@ -36,6 +36,8 @@ root.render(
           height: '100vh',
           overflow: 'hidden',
           backgroundColor: '#00695f',
+          // color: 'blue'
+          // borderline: '1px solid pink',
         },
       }}
     />
