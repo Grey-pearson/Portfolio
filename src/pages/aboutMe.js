@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../imgs/fullmetal.jpg'
-import { Box } from '@mui/material';
+import { Container, Box, Grid } from '@mui/material';
 // import { maxWidth } from '@mui/system';
 
 // const BoxPlus = styled(Box)(({ theme }) => ({
@@ -10,29 +10,33 @@ import { Box } from '@mui/material';
 
 function AboutMe() {
     return (
-        <Box sx={{
-            display: 'flex',
+        <Box>
+            <Grid container rowSpacing={1} >
+                <Grid item xs={3} />
+                <Grid item xs={3}>
+                    <img alt='img of grey pearson' src={img}
+                        style={{
+                            margin: '10px',
+                            // objectFit: 'cover',
+                            // objectPosition: 'right top',
+                            borderRadius: '5px',
+                            boxShadow: ' -7px 5px 5px rgba(0, 0, 0, .4)',
+                        }} />
+                </Grid>
 
-        }}>
-            <img alt='img of grey pearson' src={img}
-                style={{
-                    margin: '10px',
-                    objectFit: 'cover',
-                    objectPosition: 'right top',
-                    borderRadius: '5px',
-                    boxShadow: ' -7px 5px 5px rgba(0, 0, 0, .4)',
-                }}
-            />
-            <Box sx={{
-                bgcolor: 'secondary.main',
-                maxWidth: '25rem',
-                padding: '3rem',
-                margin: '10px',
-                borderRadius: '5px',
-                boxShadow: ' 7px 5px 5px rgba(0, 0, 0, .4)',
-            }}>
-                Creative driven developer seeking to contribute to a code base. Works well in a group setting or independently. Focused on process improvement, SOP standardization and team problem solving. Striving to continue personal learning, team development and customer experience.
-            </Box>
+                <Grid item xs={3}
+                    sx={{
+                        bgcolor: 'secondary.main',
+                        // height: '100%',
+                        padding: '2rem',
+                        margin: '10px',
+                        borderRadius: '5px',
+                        boxShadow: ' 7px 5px 5px rgba(0, 0, 0, .4)',
+                    }}>
+                    Creative driven developer seeking to contribute to a code base. Works well in a group setting or independently. Focused on process improvement, SOP standardization and team problem solving. Striving to continue personal learning, team development and customer experience.
+                </Grid>
+                <Grid item xs={3} />
+            </Grid>
         </Box>
     );
 }

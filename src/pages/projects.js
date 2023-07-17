@@ -9,8 +9,15 @@ function Project() {
     return (
         <Box sx={{
             backgroundColor: 'pink',
-            width: '100%',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            minHeight: '15vh',
+            width: '90vw',
         }}>
+            <ProjBox />
+            <ProjBox />
             <ProjBox />
         </Box>
     )
