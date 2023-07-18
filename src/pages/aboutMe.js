@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../imgs/fullmetal.jpg'
-import { Container, Box, Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 // import { maxWidth } from '@mui/system';
 
 // const BoxPlus = styled(Box)(({ theme }) => ({
@@ -29,6 +29,7 @@ function AboutMe() {
                         bgcolor: 'secondary.main',
                         // height: '100%',
                         padding: '2rem',
+                        // paddingTop: '2rem', find out how to center text all the way
                         margin: '10px',
                         borderRadius: '5px',
                         boxShadow: ' 7px 5px 5px rgba(0, 0, 0, .4)',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Link } from '@mui/material';
+import { Container, Link } from '@mui/material';
 
 
 function ProjBox() {
@@ -19,7 +19,11 @@ function ProjBox() {
                 margin: '1rem',
                 padding: '1rem',
                 backgroundColor: 'white',
-                border: '1px solid black',
+                borderRadius: '10px',
+                boxShadow: '0 0 10px 0 rgba(0,0,0,0.2)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
             }}>
 
             </Container>
