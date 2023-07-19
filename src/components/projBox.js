@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Link } from '@mui/material';
 
 
-function ProjBox() {
+function ProjBox(projInfo) {
     // box that takes up whole screen changing background? 
     // boxes component that links to githubs
     // screaming honestly
@@ -25,7 +25,8 @@ function ProjBox() {
                 flexDirection: 'column',
                 justifyContent: 'center',
             }}>
-
+                <h1> {projInfo.projLink} </h1>
+                <h2> {projInfo.projPic} </h2>
             </Container>
         </Link>
     )

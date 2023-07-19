@@ -18,9 +18,9 @@ function Project() {
             borderRadius: '10px',
             boxShadow: '0 0 10px 0 rgba(0,0,0,0.4)',
         }}>
-            <ProjBox />
-            <ProjBox />
-            <ProjBox />
+            <ProjBox projLink={"test"} projPic={"bitch"} />
+            <ProjBox projLink={"yay"} projPic={"bitch"} />
+            <ProjBox projLink={"exiting"} projPic={"bitch"} />
         </Box>
     )
 }
