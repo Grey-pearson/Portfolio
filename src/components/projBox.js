@@ -26,7 +26,7 @@ function ProjBox(projInfo) {
                 justifyContent: 'center',
             }}>
                 <h1> {projInfo.projLink} </h1>
-                <h2> {projInfo.projPic} </h2>
+                <img src={projInfo.projPic} />
             </Container>
         </Link>
     )

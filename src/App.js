@@ -20,9 +20,7 @@ function App() {
       alignItems: 'center',
       // height: '100vh',
     }}>
-      <NavBar />
       <AboutMe />
-      <Project />
     </Box>
   );
 }

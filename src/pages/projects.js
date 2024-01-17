@@ -1,6 +1,7 @@
-import React from 'react';
-import ProjBox from '../components/projBox';
+import React from 'react'
+import ProjBox from '../components/projBox'
 import { Box } from '@mui/material'
+import img from '../imgs/square-example.png'
 
 function Project() {
     // box that takes up whole screen changing background? 
@@ -18,9 +19,9 @@ function Project() {
             borderRadius: '10px',
             boxShadow: '0 0 10px 0 rgba(0,0,0,0.4)',
         }}>
-            <ProjBox projLink={"test"} projPic={"bitch"} />
-            <ProjBox projLink={"yay"} projPic={"bitch"} />
-            <ProjBox projLink={"exiting"} projPic={"bitch"} />
+            <ProjBox projLink={"test"} projPic={img} />
+            <ProjBox projLink={"yay"} projPic={img} />
+            <ProjBox projLink={"exiting"} projPic={img} />
         </Box>
     )
 }

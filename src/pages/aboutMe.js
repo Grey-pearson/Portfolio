@@ -8,6 +8,9 @@ import { Box, Grid } from '@mui/material';
 //     margin: '10px',
 // }))
 
+// rewrite this. maybe make seprate styling function above whatever that is called, need to make this reactive from the get go
+// need new colors as well, more pastel probably ig
+
 function AboutMe() {
     return (
         <Box>
