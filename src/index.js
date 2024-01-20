@@ -2,26 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider, colors, GlobalStyles } from '@mui/material';
+import { GlobalStyles } from '@mui/material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const theme = createTheme({
-  // add styling for box proly???
-  // styles needed: Link, 
-  palette: {
-    primary: {
-      main: colors.teal[500],
-      light: colors.teal[300],
-      dark: colors.teal[700],
-    },
-    secondary: {
-      main: colors.lightBlue[500],
-      light: colors.lightBlue[300],
-      dark: colors.lightBlue[700],
-    },
-  },
-});
+/* SCSS RGB */
+// lazuli: rgba(34, 87, 122, 1);
+// virdigris: rgba(56, 163, 165, 1);
+// emerald: rgba(87, 204, 153, 1);
+// light green: rgba(128, 237, 153, 1);
+// tea green: rgba(199, 249, 204, 1);
+// burn sienna: rgba(231, 111, 81)
 
 
 root.render(
@@ -35,14 +25,12 @@ root.render(
           justifyContent: 'center',
           height: '100vh',
           overflow: 'hidden',
-          backgroundColor: '#00695f',
-          // color: 'blue'
-          // borderline: '1px solid pink',
+          backgroundColor: 'rgba(34, 87, 122, 1)',
+          color: 'blue',
+          borderline: '1px solid pink',
         },
       }}
     />
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>
 );

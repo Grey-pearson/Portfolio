@@ -11,6 +11,14 @@ import { Box, Grid } from '@mui/material';
 // rewrite this. maybe make seprate styling function above whatever that is called, need to make this reactive from the get go
 // need new colors as well, more pastel probably ig
 
+/* SCSS RGB */
+// lazuli: rgba(34, 87, 122, 1);
+// virdigris: rgba(56, 163, 165, 1);
+// emerald: rgba(87, 204, 153, 1);
+// light green: rgba(128, 237, 153, 1);
+// tea green: rgba(199, 249, 204, 1);
+// burn sienna: rgba(231, 111, 81)
+
 function AboutMe() {
     return (
         <Box>
